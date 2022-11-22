@@ -7,16 +7,20 @@ This script is used to retrieve data from the official web pages of the election
 Installation of the libraries
 The libraries used in this script are listed in the requirements.txt file. For the installation, I recommend to use a virtual environment and to install the python libraries directly from your working environment. For my project, I installed the libraries with my Pycharm work environment. It is comfortable and faster.
 
-pip3 --version
-pip3 install -r requirements.txt
-Starting the project
-To run the script correctly, you need to start the project_3.py file with two mandatory arguments.
+file
+Settings and you go to your virtual environment.
+Then you will see Project Settings and choose the Python Interpreter.
 
-python project_3.py <base file reference> <tracking file>
+Starting the project
+
+To run the script correctly, you need to start the scraper-election.py file with two mandatory arguments.
+
+python scraper-election.py <base file reference> <tracking file>
 
 The data is then downloaded from the specified link and saved to a file with a .csv extension.
 
 Example of a project
+  
 Voting results for the district of Hradec Králové:
 
 1. argument: https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=8&xnumnuts=5201
@@ -30,7 +34,8 @@ Program flow:
 
 Download data from https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=8&xnumnuts=5201
 Export to the file results_Hradec_Kralove.csv
-Completed.
+Finiched.
+  
 Partial output :
 
 code;location;registered;envelopes;valid;...
